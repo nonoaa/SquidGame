@@ -17,11 +17,12 @@ public class Player : MonoBehaviour
     CapsuleCollider CapsuleCollider;
     Rigidbody Rigid;
     Animator Anim;
-    int DeadCount = 0;
+
     bool IsJump;
     bool IsDead;
+    int DeathCount = 0;
     private float timer = 2.0f;
-
+    public Text myDeathCount;
     void Awake()
     {
         Rigid = GetComponent<Rigidbody>();
@@ -31,30 +32,37 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        myDeathCount = GameObject.Find("DeathCount").GetComponent<Text>();
         IsDead = false;
         IsJump = false;
         timer = 2.0f;
-        transform.position = new Vector3(0, 10, 0);
+        transform.position = new Vector3(0, 10.5f, 0);
         transform.eulerAngles = new Vector3(0, 0, 0);
         Rigid.freezeRotation = true;
+        Anim.SetBool("Grounded", false);
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateMove();
+        UpdateText();
     }
 
     void UpdateMove()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            transform.position = new Vector3(0, 9, 0);
+        }
         if (IsDead)
         {
             Anim.SetFloat("MoveSpeed", 0.0f);
             timer -= Time.deltaTime;
             if (timer < 0)
             {
-                DeadCount++;
                 Start();
+                DeathCount++;
             }
             return;
         }
@@ -106,5 +114,8 @@ public class Player : MonoBehaviour
             IsJump = true;
         }
     }
-
+    private void UpdateText()
+    {
+        myDeathCount.text = "Death : " + DeathCount.ToString();
+    }
 }
