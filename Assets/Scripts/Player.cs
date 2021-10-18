@@ -51,10 +51,6 @@ public class Player : MonoBehaviour
 
     void UpdateMove()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            transform.position = new Vector3(0, 9, 0);
-        }
         if (IsDead)
         {
             Anim.SetFloat("MoveSpeed", 0.0f);
