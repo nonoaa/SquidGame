@@ -1,0 +1,9 @@
+{
+    "ErrorExceptions":
+    [
+        {
+             "ValidationTest": "NDA Keyword Validation",
+             "PackageVersion": "1.1.0"
+        }
+    ]
+}

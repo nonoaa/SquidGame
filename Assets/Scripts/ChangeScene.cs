@@ -20,6 +20,6 @@ public class ChangeScene : MonoBehaviour
 
     public void OnRetry()
     {
-        SceneManager.LoadScene("InGame");
+        SceneManager.LoadScene("Loading");
     }
 }

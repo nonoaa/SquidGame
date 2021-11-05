@@ -37,10 +37,37 @@ public class SystemManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    NetworkConnectionInfo connectionInfo = new NetworkConnectionInfo();
+
+    public NetworkConnectionInfo ConnectionInfo
+    {
+        get
+        {
+            return connectionInfo;
+        }
+    }
+
+    BaseSceneMain currentSceneMain;
+
+    public BaseSceneMain CurrentSceneMain
+    {
+        set
+        {
+            currentSceneMain = value;
+        }
+    }
+    public T GetCurrentSceneMain<T>()
+     where T : BaseSceneMain
+    {
+        return currentSceneMain as T;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        BaseSceneMain baseSceneMain = GameObject.FindObjectOfType<BaseSceneMain>();
+        SystemManager.Instance.CurrentSceneMain = baseSceneMain;
     }
 
     // Update is called once per frame

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InputController : MonoBehaviour
+public class InputController
 {
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class InputController : MonoBehaviour
         UpdateInput();
     }
 
-    void UpdateInput()
+    public void UpdateInput()
     {
         Vector3 moveDirection = Vector3.zero;
 
@@ -41,11 +41,7 @@ public class InputController : MonoBehaviour
         {
             moveDirection.y = 1;
         }
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene("InGame");
-        }
 
-        SystemManager.Instance.Hero.ProcessInput(moveDirection);
+        SystemManager.Instance.GetCurrentSceneMain<IngameSceneMain>().Hero.ProcessInput(moveDirection);
     }
 }
