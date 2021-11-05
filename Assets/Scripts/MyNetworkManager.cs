@@ -8,8 +8,6 @@ public class MyNetworkManager : NetworkManager
 {
     public const int WatingPlayerCount = 2;
 
-    int PlayerCount = 0;
-
     public bool isServer
     {
         get;
@@ -35,13 +33,6 @@ public class MyNetworkManager : NetworkManager
     {
         Debug.Log("OnServerReady : " + conn.address + ", " + conn.connectionId);
         base.OnServerReady(conn);
-
-        //PlayerCount++;
-
-        //if (PlayerCount >= WatingPlayerCount)
-        //{
-        //    SceneManager.LoadScene("InGame");
-        //}
     }
 
     public override void OnServerError(NetworkConnection conn, int errorCode)

@@ -53,26 +53,27 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\IngameSceneMain.cs" />
+    <Compile Include="Assets\Scripts\BaseSceneMain.cs" />
     <Compile Include="Assets\Scripts\FollowingCamera.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\DemoFree.cs" />
     <Compile Include="Assets\Scripts\GlassManager.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleSampleCharacterControl.cs" />
+    <Compile Include="Assets\Scripts\BasePanel.cs" />
+    <Compile Include="Assets\Scripts\TitleSceneMain.cs" />
     <Compile Include="Assets\Scripts\GlassFactory.cs" />
+    <Compile Include="Assets\Scripts\MyNetworkManager.cs" />
+    <Compile Include="Assets\Scripts\NetworkConnectionInfo.cs" />
+    <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\Glass.cs" />
     <Compile Include="Assets\Scripts\SystemManager.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\NetworkConfigPanel.cs" />
+    <Compile Include="Assets\Scripts\LoadingSceneMain.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\FreeCameraLogic.cs" />
-    <Compile Include="Assets\Scripts\MyNetworkManager.cs" />
-    <Compile Include="Assets\Scripts\LoadingSceneMain.cs" />
-    <Compile Include="Assets\Scripts\BaseSceneMain.cs" />
-    <Compile Include="Assets\Scripts\NetworkConnectionInfo.cs" />
-    <Compile Include="Assets\Scripts\NetworkConfigPanel.cs" />
-    <Compile Include="Assets\Scripts\BasePanel.cs" />
-    <Compile Include="Assets\Scripts\TitleSceneMain.cs" />
-    <Compile Include="Assets\Scripts\PanelManager.cs" />
-    <Compile Include="Assets\Scripts\IngameSceneMain.cs" />
+    <Compile Include="Assets\Scripts\Arrow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Supercyan Character Pack Free Sample\Shaders\Legacy\CelShader.shader" />

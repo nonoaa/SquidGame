@@ -196,6 +196,8 @@ MonoBehaviour:
   Speed: 2
   JumpPower: 4
   NetworkIdentity: {fileID: 5199442197687562489}
+  ServerPlayerMaterial: {fileID: 2100000, guid: 230adeaa0dabf194ba19f401706ab176, type: 2}
+  ClientPlayerMaterial: {fileID: 2100000, guid: de3e263cc24dc5c47b600655677948ef, type: 2}
   Host: 0
   myDeathCount: {fileID: 0}
 --- !u!114 &5199442197687562489

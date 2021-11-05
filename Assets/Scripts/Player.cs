@@ -20,6 +20,12 @@ public class Player : NetworkBehaviour
     NetworkIdentity NetworkIdentity = null;
 
     [SerializeField]
+    Material ServerPlayerMaterial;
+
+    [SerializeField]
+    Material ClientPlayerMaterial;
+
+    [SerializeField]
     [SyncVar]
     bool Host = false;  // Host 플레이어인지 여부
 
@@ -120,7 +126,6 @@ public class Player : NetworkBehaviour
             }
             return;
         }
-
         if (isServer)
         {
             RpcMove(MoveVector);        // Host 플레이어인경우 RPC로 보내고
@@ -151,12 +156,12 @@ public class Player : NetworkBehaviour
             base.SetDirtyBit(1);
             return;
         }
-        this.MoveVector = moveVector; 
+        MoveVector = moveVector; 
         Anim.SetFloat("MoveSpeed", Speed);
         transform.LookAt(transform.position + moveVector);
         transform.position += moveVector;
         base.SetDirtyBit(1);
-        this.MoveVector = Vector3.zero; // 타 플레이어가 보낸경우 Update를 통해 초기화 되지 않으므로 사용후 바로 초기화
+        MoveVector = Vector3.zero; // 타 플레이어가 보낸경우 Update를 통해 초기화 되지 않으므로 사용후 바로 초기화
     }
 
     [ClientCallback]
@@ -181,12 +186,12 @@ public class Player : NetworkBehaviour
             base.SetDirtyBit(1);
             return;
         }
-        this.MoveVector = moveVector;
+        MoveVector = moveVector;
         Anim.SetFloat("MoveSpeed",Speed);
         transform.LookAt(transform.position + moveVector);
         transform.position += moveVector;
         base.SetDirtyBit(1);
-        this.MoveVector = Vector3.zero; // 타 플레이어가 보낸경우 Update를 통해 초기화 되지 않으므로 사용후 바로 초기화
+        MoveVector = Vector3.zero; // 타 플레이어가 보낸경우 Update를 통해 초기화 되지 않으므로 사용후 바로 초기화
     }
 
     [ClientRpc]
@@ -238,6 +243,7 @@ public class Player : NetworkBehaviour
             Rigid.freezeRotation = false;
             transform.eulerAngles = new Vector3(UnityEngine.Random.Range(-20, 20), transform.eulerAngles.y, UnityEngine.Random.Range(-20, 20));
         }
+
     }
 
     private void OnCollisionExit(Collision collision)
@@ -247,6 +253,7 @@ public class Player : NetworkBehaviour
             Anim.SetBool("Grounded", false);
             IsJump = true;
         }
+
     }
     private void UpdateText()
     {
