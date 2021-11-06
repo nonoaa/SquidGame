@@ -20,31 +20,24 @@ public class Player : NetworkBehaviour
     NetworkIdentity NetworkIdentity = null;
 
     [SerializeField]
-    Material ServerPlayerMaterial;
-
-    [SerializeField]
-    Material ClientPlayerMaterial;
-
-    [SerializeField]
     [SyncVar]
     bool Host = false;  // Host 플레이어인지 여부
 
     CapsuleCollider CapsuleCollider;
     Rigidbody Rigid;
-
     Animator Anim;
-
     InputController inputController = new InputController();
 
     bool IsJump;
     bool IsDead;
     int DeathCount = 0;
-    private float timer = 2.0f;
+    private float timer;
     public Text myDeathCount;
     void Awake()
     {
         Rigid = GetComponent<Rigidbody>();
         Anim = GetComponentInChildren<Animator>();
+        myDeathCount = GameObject.Find("DeathCount").GetComponent<Text>();
     }
 
     // Start is called before the first frame update
@@ -63,7 +56,6 @@ public class Player : NetworkBehaviour
             RpcSetHost();
         }
 
-        myDeathCount = GameObject.Find("DeathCount").GetComponent<Text>();
         IsDead = false;
         IsJump = false;
         timer = 2.0f;
@@ -214,7 +206,7 @@ public class Player : NetworkBehaviour
             {
                 if (isServer)
                 {
-                    RpcJump();        // Host 플레이어인경우 RPC로 보내고
+                    RpcJump();
                 }
                 else
                 {

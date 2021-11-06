@@ -33,18 +33,6 @@ public class IngameSceneMain : BaseSceneMain
 
     }
 
-    [SerializeField]
-    GlassManager glassManager;
-
-    public GlassManager GlassManager
-    {
-        get
-        {
-            return glassManager;
-        }
-    }
-
-
     // Start is called before the first frame update
     void Start()
     {

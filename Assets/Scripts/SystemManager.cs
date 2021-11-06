@@ -38,6 +38,17 @@ public class SystemManager : MonoBehaviour
     }
 
     [SerializeField]
+    GlassManager glassManager;
+
+    public GlassManager GlassManager
+    {
+        get
+        {
+            return glassManager;
+        }
+    }
+
+    [SerializeField]
     NetworkConnectionInfo connectionInfo = new NetworkConnectionInfo();
 
     public NetworkConnectionInfo ConnectionInfo

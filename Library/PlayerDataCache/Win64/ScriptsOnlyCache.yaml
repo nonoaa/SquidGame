@@ -105,11 +105,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 2974}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 53350}
+      Script: {instanceID: 3654}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -188,9 +188,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 4312}
+      Script: {instanceID: 4314}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,13 +275,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3652}
+      Script: {instanceID: 3654}
     - Class: 114
-      Script: {instanceID: 3812}
+      Script: {instanceID: 3814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -383,7 +383,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 4124f91ac67abb31a40aa1c66e237c85
+      Hash: aef9386513e10c2b58b4c2172faf4e3c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IngameSceneMain
@@ -635,6 +635,12 @@ ScriptsOnlyBuild:
     className: NetworkManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Arrow
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -683,7 +689,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 2269466fcaa6044e5596d1b4bd6e25ba
+      Hash: cc3e4f22e63f2aa290503bdf4627bde4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SystemManager
@@ -779,7 +785,7 @@ ScriptsOnlyBuild:
     className: NetworkStartPosition
   - hash:
       serializedVersion: 2
-      Hash: eea5d7bfaf1c93837d83549e572fca14
+      Hash: 8d9b71d72c62d1f0f545bf2440693455
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -921,15 +927,9 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FreeCameraLogic
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Arrow
   platform: 19
   scenePathNames:
   - Assets/Scenes/Title.unity
   - Assets/Scenes/InGame.unity
   - Assets/Scenes/Loading.unity
-  playerPath: C:/Users/clzkf/Desktop/test/SquidGame.exe
+  playerPath: C:/Users/clzkf/Desktop/SquidGame/SquidGame.exe
