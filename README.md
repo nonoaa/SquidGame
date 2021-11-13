@@ -1,10 +1,12 @@
 # SquidGame
 Unity Engine을 사용한 오징어게임 구현
 
+## Start
 + 1명은 Host, 1명은 Client로 Host에게 접속
 ![2](https://user-images.githubusercontent.com/56538203/141608756-a0d70949-f717-42a5-a71c-3827e771c32f.PNG)
 
-+ 기본적인 움직임
+## How To Play
++ 기본적인 움직임 (WASD와 방향키로 이동, Space Bar로 점프)
 ![14](https://user-images.githubusercontent.com/56538203/141608813-f14f447d-3122-48f9-bd09-9c5f6665f274.PNG)
 ![15](https://user-images.githubusercontent.com/56538203/141608824-538c5b5d-b28d-41b4-a2ca-8b9acb045816.PNG)
 
