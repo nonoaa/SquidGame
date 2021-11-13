@@ -13,3 +13,6 @@ Unity Engine을 사용한 오징어게임 구현
 + 일반 유리를 밟을 시 바닥에 떨어지고 사망
 ![6](https://user-images.githubusercontent.com/56538203/141608856-0008c242-20d8-427d-b115-167ae95f1d7a.PNG)
 ![12](https://user-images.githubusercontent.com/56538203/141608859-db573bdf-a315-4de8-ad5e-c9a9a789325d.PNG)
+
++ 끝까지 도달하는 것이 목표
+![13](https://user-images.githubusercontent.com/56538203/141608994-554928a7-4e90-4916-bd29-0a182603ac43.PNG)
