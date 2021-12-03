@@ -17,4 +17,5 @@
 ![12](https://user-images.githubusercontent.com/56538203/141608859-db573bdf-a315-4de8-ad5e-c9a9a789325d.PNG)
 
 + 끝까지 도달하는 것이 목표
-![13](https://user-images.githubusercontent.com/56538203/141608994-554928a7-4e90-4916-bd29-0a182603ac43.PNG)
+![image](https://user-images.githubusercontent.com/56538203/144629345-ff59cdab-1c1a-4acb-b487-6254708abccf.png)
+
