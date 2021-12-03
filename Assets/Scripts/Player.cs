@@ -23,6 +23,8 @@ public class Player : NetworkBehaviour
     [SyncVar]
     bool Host = false;  // Host 플레이어인지 여부
 
+    int IsEnd = 0;
+
     CapsuleCollider CapsuleCollider;
     Rigidbody Rigid;
     Animator Anim;
@@ -33,11 +35,13 @@ public class Player : NetworkBehaviour
     int DeathCount = 0;
     private float timer;
     public Text myDeathCount;
+    CheckWinner WinnerText;
     void Awake()
     {
         Rigid = GetComponent<Rigidbody>();
         Anim = GetComponentInChildren<Animator>();
         myDeathCount = GameObject.Find("DeathCount").GetComponent<Text>();
+        WinnerText = GameObject.Find("Winner").GetComponent<CheckWinner>();
     }
 
     // Start is called before the first frame update
@@ -235,7 +239,30 @@ public class Player : NetworkBehaviour
             Rigid.freezeRotation = false;
             transform.eulerAngles = new Vector3(UnityEngine.Random.Range(-20, 20), transform.eulerAngles.y, UnityEngine.Random.Range(-20, 20));
         }
+        if (collision.gameObject.tag == "EndFloor")
+        {
+            Anim.SetBool("Grounded", true);
+            Rigid.freezeRotation = true;
+            IsJump = false;
+            if (IsEnd == 0)
+            {
+                if (isServer)
+                {
+                    if (isLocalPlayer)
+                        WinnerText.SetWinner(1);
+                    else
+                        WinnerText.SetWinner(2);
+                }
+                else if (!isServer)
+                {
+                    if (isLocalPlayer)
+                        WinnerText.SetWinner(2);
+                    else
+                        WinnerText.SetWinner(1);
+                }
 
+            }
+        }
     }
 
     private void OnCollisionExit(Collision collision)
@@ -245,7 +272,11 @@ public class Player : NetworkBehaviour
             Anim.SetBool("Grounded", false);
             IsJump = true;
         }
-
+        if (collision.gameObject.tag == "EndFloor")
+        {
+            Anim.SetBool("Grounded", false);
+            IsJump = true;
+        }
     }
     private void UpdateText()
     {

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Arrow
+    - CheckWinner
     - FollowingCamera
     - Glass
     - GlassFactory
@@ -97,19 +98,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2380}
     - Class: 114
-      Script: {instanceID: 2442}
-    - Class: 114
       Script: {instanceID: 2556}
     - Class: 114
       Script: {instanceID: 2608}
-    - Class: 114
-      Script: {instanceID: 2816}
     - Class: 114
       Script: {instanceID: 2974}
     - Class: 114
       Script: {instanceID: 3246}
     - Class: 114
       Script: {instanceID: 3654}
+    - Class: 114
+      Script: {instanceID: 68608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -927,6 +926,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FreeCameraLogic
+  - hash:
+      serializedVersion: 2
+      Hash: 44b316017275754760200be4ad491e59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckWinner
   platform: 19
   scenePathNames:
   - Assets/Scenes/Title.unity

@@ -29,10 +29,12 @@ public class GlassManager : NetworkBehaviour
                 {
                     IsTemperedGlass = IsTemperedGlass << 1;
                     IsTemperedGlass += 1;
+                    Debug.Log("Left");
                 }
                 else
                 {
                     IsTemperedGlass = IsTemperedGlass << 1;
+                    Debug.Log("Right");
                 }
             }
         }
@@ -43,6 +45,7 @@ public class GlassManager : NetworkBehaviour
                 GenerateTemperedGlass(pos);
                 pos.x = -pos.x;
                 GenerateNormalGlass(pos);
+                pos.x = -pos.x;
                 pos.z += 2;
             }
             else
@@ -50,6 +53,7 @@ public class GlassManager : NetworkBehaviour
                 GenerateNormalGlass(pos);
                 pos.x = -pos.x;
                 GenerateTemperedGlass(pos);
+                pos.x = -pos.x;
                 pos.z += 2;
             }
         }
