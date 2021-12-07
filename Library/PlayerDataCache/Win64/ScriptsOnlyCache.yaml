@@ -38,7 +38,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
     com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
     - UnityEngine.Networking.NetworkTransform
   sceneClasses:
@@ -106,9 +105,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3654}
+      Script: {instanceID: 3342}
     - Class: 114
-      Script: {instanceID: 68608}
+      Script: {instanceID: 3656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,8 +155,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -187,9 +184,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 3654}
+      Script: {instanceID: 3656}
     - Class: 114
-      Script: {instanceID: 4314}
+      Script: {instanceID: 4316}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -235,8 +232,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -278,9 +273,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3654}
+      Script: {instanceID: 3656}
     - Class: 114
-      Script: {instanceID: 3814}
+      Script: {instanceID: 3816}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -724,6 +719,12 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: 44b316017275754760200be4ad491e59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckWinner
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -926,12 +927,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FreeCameraLogic
-  - hash:
-      serializedVersion: 2
-      Hash: 44b316017275754760200be4ad491e59
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CheckWinner
   platform: 19
   scenePathNames:
   - Assets/Scenes/Title.unity

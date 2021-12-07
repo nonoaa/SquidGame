@@ -25,7 +25,11 @@ public class CheckWinner : MonoBehaviour
     }
     public void SetWinner(int num)
     {
-        if (winner == 0)
-            winner = num;
+        winner = num;
+    }
+
+    public int GetWinner()
+    {
+        return winner;
     }
 }

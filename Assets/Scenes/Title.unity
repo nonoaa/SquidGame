@@ -1549,6 +1549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3602782732579278954, guid: 5a677f791213478488725af78fc7c736, type: 3}
+  glassManager: {fileID: 0}
   connectionInfo:
     Host: 0
     IPAddress: 

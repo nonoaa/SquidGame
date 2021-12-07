@@ -244,7 +244,7 @@ public class Player : NetworkBehaviour
             Anim.SetBool("Grounded", true);
             Rigid.freezeRotation = true;
             IsJump = false;
-            if (IsEnd == 0)
+            if (WinnerText.GetWinner() == 0)
             {
                 if (isServer)
                 {
@@ -260,7 +260,6 @@ public class Player : NetworkBehaviour
                     else
                         WinnerText.SetWinner(1);
                 }
-
             }
         }
     }
