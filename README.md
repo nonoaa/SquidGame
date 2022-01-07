@@ -12,9 +12,15 @@
 ![14](https://user-images.githubusercontent.com/56538203/141608813-f14f447d-3122-48f9-bd09-9c5f6665f274.PNG)
 ![15](https://user-images.githubusercontent.com/56538203/141608824-538c5b5d-b28d-41b4-a2ca-8b9acb045816.PNG)
 
++ 강화 유리를 밟았을 때
+![SquidGame 2021-12-06 오후 7_57_36](https://user-images.githubusercontent.com/56538203/148529629-97c06431-f56a-46eb-8cd0-d46ab87ebcd4.png)
+
 + 일반 유리를 밟을 시 바닥에 떨어지고 사망
-![6](https://user-images.githubusercontent.com/56538203/141608856-0008c242-20d8-427d-b115-167ae95f1d7a.PNG)
-![12](https://user-images.githubusercontent.com/56538203/141608859-db573bdf-a315-4de8-ad5e-c9a9a789325d.PNG)
+![SquidGame 2021-12-06 오후 7_57_41](https://user-images.githubusercontent.com/56538203/148529492-94711077-972e-47d1-ab0f-c5209c18962a.png)
+![SquidGame 2021-12-06 오후 7_59_14](https://user-images.githubusercontent.com/56538203/148529504-c4e1d333-4564-4038-b1e1-df4e5b96d100.png)
+
++ 사망 했을 시 시작지점에서 부활
+![SquidGame 2021-12-06 오후 8_00_12](https://user-images.githubusercontent.com/56538203/148529509-cb56471d-e3dc-4521-ae18-f9de3b1a9014.png)
 
 + 끝까지 도달하는 것이 목표
 ![image](https://user-images.githubusercontent.com/56538203/144629345-ff59cdab-1c1a-4acb-b487-6254708abccf.png)
