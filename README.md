@@ -3,6 +3,9 @@
 + 칸마다 랜덤으로 한쪽에는 강화 유리, 한쪽에는 일반 유리가 생기고 일반 유리를 밟을 시 바닥에 떨어짐
 + Unity에서 제공되는 UNet의 HLAPI로 LAN 멀티플레이 구현
 
+## 구현영상
++ https://drive.google.com/file/d/1XnqadTwb4x30bpJDy2P3447YX9zF1goQ/view?usp=sharing
+
 ## Start
 + 1명은 Host, 1명은 Client로 Host에게 접속
 ![2](https://user-images.githubusercontent.com/56538203/141608756-a0d70949-f717-42a5-a71c-3827e771c32f.PNG)
